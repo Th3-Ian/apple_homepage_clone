@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,6 +10,10 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
+}
+
+.body {
+  display: grid;
 }
 
 .top {
@@ -24,6 +30,8 @@
   height: auto;
   flex-wrap: wrap;
 }
+
+/* NAVIGATION */
 
 .nav-container {
   display: flex;
@@ -102,6 +110,8 @@
   color: #393939;
 }
 
+/* HERO */
+
 .hero > * {
   flex: 1 0 100%;
   text-align: center;
@@ -140,4 +150,22 @@
   margin: 5px;
   height: 24px;
   width: 24px;
+}
+
+/* PROMOS */
+
+.promos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 2px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.promo-pic {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
 }
